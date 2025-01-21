@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* DESKTOP */
+body {
+    background-color: #BDE0FE;
+}
+
+header {
+    background-color: #A2D2FF;
+    padding: 10px 30px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav h4:hover {
+    background: #63A5A3;
+    padding: 5px;
+    margin: -5px;
+    border-radius: 5px;
+}
+
+a {
+    color: black;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 30px;
+    background-color: #beb4db;
+    height: 100%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.img-card {
+    margin-top: 35px;
+    height: 220px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.text-card {
+    padding: 20px;
+    text-align: start;
+    font-size: 15px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #A2D2FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 601px) and (max-width: 768px)  {
+
+    section {
+        flex-wrap: wrap;
+    }
+    footer {
+        position: relative;
+    }
+  }
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    header{
+        height: 90px;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    .nav-link {
+        flex-direction: column;
+        text-align: center;
+        padding: 5px 0px;
+        gap: 5px;
+    }
+    section {
+      flex-direction: column;
+      align-items: center;
+    }
+    footer {
+        position: relative;
+    }
+  }
